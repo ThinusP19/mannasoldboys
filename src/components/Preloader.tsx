@@ -23,21 +23,7 @@ export const Preloader = () => {
   if (!isLoading) return null;
 
   return (
-    <div
-      className="fixed inset-0 z-[9999] flex items-center justify-center bg-[#000000] preloader-container"
-      style={{
-        width: '100%',
-        height: '100dvh', // Dynamic viewport height - works correctly on mobile
-        minHeight: '100vh', // Fallback for older browsers
-        WebkitMinHeight: '-webkit-fill-available', // Safari iOS fix
-        position: 'fixed',
-        top: 0,
-        left: 0,
-        right: 0,
-        bottom: 0,
-        overflow: 'hidden',
-      }}
-    >
+    <div className="fixed inset-0 w-screen h-screen z-[9999] flex items-center justify-center bg-black">
       <div className="flex flex-col items-center gap-6">
         <h1 className="text-3xl font-bold text-white tracking-wide animate-pulse">
           Monnas Old Boys

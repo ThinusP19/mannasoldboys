@@ -53,7 +53,7 @@ const Marketplace = () => {
 
   return (
     <AppLayout title="Marketplace">
-      <div className="p-4 md:p-6 bg-[#f5f0e8] min-h-full pb-24 md:pb-6">
+      <div className="p-4 md:p-6 bg-[#f5f0e8] pb-24 md:pb-6">
         {/* Mobile Back Button */}
         <div className="md:hidden mb-4">
           <Button
