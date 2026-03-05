@@ -1,0 +1,46 @@
+{
+  "name": "Potch Gim Alumni",
+  "short_name": "Potch Gim",
+  "description": "Official alumni network for Potchefstroom Gymnasium. Connect with former classmates, share memories, and attend reunions.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#1a1a1a",
+  "theme_color": "#1a1a1a",
+  "orientation": "portrait-primary",
+  "scope": "/",
+  "lang": "en-ZA",
+  "categories": ["social", "education"],
+  "icons": [
+    {
+      "src": "/Logo.jpeg",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/Logo.jpeg",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Stories",
+      "short_name": "Stories",
+      "description": "Read alumni stories",
+      "url": "/stories",
+      "icons": [{ "src": "/Logo.jpeg", "sizes": "192x192" }]
+    },
+    {
+      "name": "Reunions",
+      "short_name": "Reunions",
+      "description": "View upcoming reunions",
+      "url": "/reunions",
+      "icons": [{ "src": "/Logo.jpeg", "sizes": "192x192" }]
+    }
+  ],
+  "related_applications": [],
+  "prefer_related_applications": false
+}

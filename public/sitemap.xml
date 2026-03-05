@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Homepage / Login -->
+  <url>
+    <loc>https://alumni.potchgim.co.za/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://alumni.potchgim.co.za/" />
+    <xhtml:link rel="alternate" hreflang="af" href="https://alumni.potchgim.co.za/?lang=af" />
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://alumni.potchgim.co.za/cropped-skool-wapen.png</image:loc>
+      <image:title>Potchefstroom Gymnasium Alumni</image:title>
+    </image:image>
+  </url>
+
+  <!-- Login Page -->
+  <url>
+    <loc>https://alumni.potchgim.co.za/login</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Alumni Profile -->
+  <url>
+    <loc>https://alumni.potchgim.co.za/profile</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- My Year Group -->
+  <url>
+    <loc>https://alumni.potchgim.co.za/my-year</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Directory -->
+  <url>
+    <loc>https://alumni.potchgim.co.za/directory</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Alumni Stories -->
+  <url>
+    <loc>https://alumni.potchgim.co.za/stories</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- Reunions -->
+  <url>
+    <loc>https://alumni.potchgim.co.za/reunions</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+  </url>
+
+  <!-- In Memoriam -->
+  <url>
+    <loc>https://alumni.potchgim.co.za/memorial</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- Give Back -->
+  <url>
+    <loc>https://alumni.potchgim.co.za/give-back</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+  <!-- More / Menu -->
+  <url>
+    <loc>https://alumni.potchgim.co.za/more</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+  <!-- Settings -->
+  <url>
+    <loc>https://alumni.potchgim.co.za/settings</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+  </url>
+
+  <!-- Notifications -->
+  <url>
+    <loc>https://alumni.potchgim.co.za/notifications</loc>
+    <lastmod>2026-02-15</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>0.7</priority>
+  </url>
+
+</urlset>

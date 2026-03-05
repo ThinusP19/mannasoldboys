@@ -1,0 +1,53 @@
+version: '3.8'
+
+services:
+  frontend:
+    build:
+      context: .
+      dockerfile: Dockerfile.frontend
+      args:
+        VITE_API_URL: http://localhost:3001/api
+    ports:
+      - "3000:80"
+    depends_on:
+      backend:
+        condition: service_healthy
+    networks:
+      - alumni-network
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://localhost:80/health"]
+      interval: 30s
+      timeout: 3s
+      retries: 3
+
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile.backend
+    ports:
+      - "3001:3001"
+    environment:
+      - NODE_ENV=development
+      - PORT=3001
+      - JWT_SECRET=${JWT_SECRET:-development-secret-key-change-in-production-minimum-64-characters}
+      - JWT_EXPIRES_IN=${JWT_EXPIRES_IN:-1h}
+      - DB_HOST=${DB_HOST:-192.168.101.130}
+      - DB_PORT=${DB_PORT:-1433}
+      - DB_NAME=${DB_NAME:-alumni_connect}
+      - DB_USER=${DB_USER:-sa}
+      - DB_PASS=${DB_PASS:-}
+      - CORS_ORIGIN=${CORS_ORIGIN:-http://localhost:3000}
+    volumes:
+      - ./logs:/app/logs
+    networks:
+      - alumni-network
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "http://localhost:3001/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 40s
+
+networks:
+  alumni-network:
+    driver: bridge

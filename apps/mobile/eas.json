@@ -1,0 +1,61 @@
+{
+  "cli": {
+    "version": ">= 7.0.0"
+  },
+  "build": {
+    "_comment_development": "Development: Creates debug build with dev client for local testing",
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal",
+      "ios": {
+        "simulator": true
+      },
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "_comment_preview": "Preview: Creates internal distribution build for testing on real devices",
+    "preview": {
+      "distribution": "internal",
+      "ios": {
+        "simulator": false
+      },
+      "android": {
+        "buildType": "apk"
+      }
+    },
+    "_comment_production": "Production: Creates store-ready build for App Store / Play Store",
+    "_comment_production_usage": "Run: eas build --platform ios --profile production",
+    "production": {
+      "distribution": "store",
+      "ios": {
+        "credentialsSource": "remote"
+      },
+      "android": {
+        "buildType": "app-bundle"
+      }
+    }
+  },
+  "submit": {
+    "_comment_submit": "=== SUBMISSION CONFIGURATION ===",
+    "_comment_submit_info": "Configure these values before running: eas submit",
+    "production": {
+      "_comment_ios_submit": "iOS: Get these values from App Store Connect",
+      "_comment_ios_appleId": "appleId: Your Apple ID email used for App Store Connect",
+      "_comment_ios_ascAppId": "ascAppId: App ID from App Store Connect (App Information > General)",
+      "_comment_ios_teamId": "appleTeamId: Found in developer.apple.com Membership section",
+      "ios": {
+        "appleId": "your-apple-id@email.com",
+        "ascAppId": "your-app-store-connect-app-id",
+        "appleTeamId": "YOUR_TEAM_ID"
+      },
+      "_comment_android_submit": "Android: Create service account in Google Cloud Console",
+      "_comment_android_key": "serviceAccountKeyPath: JSON file from Google Cloud service account",
+      "_comment_android_track": "track: internal, alpha, beta, or production",
+      "android": {
+        "serviceAccountKeyPath": "./google-service-account.json",
+        "track": "internal"
+      }
+    }
+  }
+}
