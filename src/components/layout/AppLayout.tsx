@@ -15,16 +15,16 @@ interface AppLayoutProps {
 
 export const AppLayout = ({ children, title = "Monnas Old Boys", showFilter, onFilterClick, searchValue, onSearchChange }: AppLayoutProps) => {
   return (
-    <div className="flex h-screen overflow-hidden bg-[#f5f0e8] md:p-2">
+    <div className="min-h-screen bg-[#f5f0e8] md:flex md:h-screen md:overflow-hidden md:p-2">
       <DesktopSidebar />
 
-      <main className="flex-1 flex flex-col overflow-hidden bg-[#f5f0e8] md:ml-2">
+      <main className="flex-1 flex flex-col bg-[#f5f0e8] md:overflow-hidden md:ml-2">
         <DesktopHeader title={title} />
         {title === "Directory" && (
           <MobileTopBar title={title} showFilter={showFilter} onFilterClick={onFilterClick} searchValue={searchValue} onSearchChange={onSearchChange} />
         )}
 
-        <div className="flex-1 overflow-y-auto pb-24 md:pb-0" style={{ WebkitOverflowScrolling: 'touch' }}>
+        <div className="flex-1 pb-24 md:pb-0 md:overflow-y-auto">
           {children}
         </div>
       </main>
