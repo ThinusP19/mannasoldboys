@@ -9,7 +9,7 @@ export const MobileBottomNav = () => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <nav className="md:hidden fixed bottom-2 left-2 right-2 bg-black/90 backdrop-blur-xl border border-white/10 rounded-2xl z-50 safe-area-bottom shadow-2xl">
+    <nav className="md:hidden fixed bottom-4 left-2 right-2 bg-black/90 backdrop-blur-xl border border-white/10 rounded-2xl z-50 safe-area-bottom shadow-2xl">
       <div className="flex items-center justify-between h-16 px-3">
         {/* First 2 icons */}
         <button

@@ -73,7 +73,7 @@ const Sponsors = () => {
   if (isLoading) {
     return (
       <AppLayout title="Sponsors">
-        <div className="p-4 md:p-6 bg-[#f5f0e8] min-h-full flex items-center justify-center">
+        <div className="p-4 md:p-6 bg-[#f5f0e8] min-h-full pb-24 md:pb-6 flex items-center justify-center">
           <p className="text-muted-foreground">Loading sponsors...</p>
         </div>
       </AppLayout>
@@ -82,7 +82,7 @@ const Sponsors = () => {
 
   return (
     <AppLayout title="Sponsors">
-      <div className="p-4 md:p-6 bg-[#f5f0e8] min-h-full">
+      <div className="p-4 md:p-6 bg-[#f5f0e8] min-h-full pb-24 md:pb-6">
         {/* Mobile Back Button */}
         <div className="md:hidden mb-4">
           <Button
